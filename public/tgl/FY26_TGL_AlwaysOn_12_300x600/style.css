@@ -1,0 +1,158 @@
+/* MAIN */
+body {
+  margin:0px;
+  text-rendering:optimizeLegibility; 
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  -webkit-text-size-adjust: none;
+  font-kerning: none;
+  -webkit-text-rendering: optimizeSpeed;
+  text-rendering: optimizeSpeed;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  
+}
+
+@media screen and (min-width:0) and (min-resolution:+72dpi) { /* IE fix */
+  body { text-rendering:optimzeSpeed; }
+}
+
+div { position: absolute; display: block; } 
+
+img { position: absolute; }
+
+#ad, #banner {
+   width: 300px; 
+   height: 600px; 
+}
+
+#ad {   
+   overflow:hidden;
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+
+#banner {
+  background-color:#FFF; 
+}
+
+#border {
+  width: 298px;
+  height: 598px;
+  border: 1px solid #AAA;
+  pointer-events:none;
+  z-index: 50;
+  display: block;
+  opacity: 0;
+}
+
+.button {
+  outline:none;
+  background-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+  user-select:none;
+  cursor:pointer;
+}
+
+#clickthru { 
+  width: 300px; 
+  height: 600px; 
+  z-index:98; 
+  cursor:pointer; 
+  background-color:rgba(0, 0, 0, 0);
+}
+/*frames*/
+.frames { 
+  width:100%; 
+  height:100%; 
+  left: 0px;
+  top: 0px;
+  display:block; 
+  opacity: 1;
+}
+
+#bg {
+  width:100%;
+  height:100%;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+}
+
+#bottle {
+  width: 100%;
+  height: 100%;
+  left: -143px;
+  top: 131px;
+  z-index: 10;
+}
+
+.headline {
+  width:100%; 
+  height:100%; 
+  left: 0px;
+  top: 0px;
+  opacity:1;
+  font-family: "stolz-bold", sans-serif;
+}
+
+#headline1, #headline2 {
+  width: 100%;
+  height: auto;
+  top: 456px;
+  left: 0px;
+  right: 0;
+  z-index: 1;
+  opacity: 1;
+  margin: 0 auto;
+  bottom: 99px;
+}
+
+
+div#headline1 {
+  display: flex;
+  width: 143px;
+  opacity: 1;
+  justify-content: space-around;
+}
+
+div#headline1 img, 
+div#headline2 img {
+    display: inline-block;
+    position: relative;
+    margin-right: 5px;
+    opacity: 0;
+}
+
+div#headline2 img {
+  margin-right: 2px;
+}
+
+div#headline1 img:last-of-type,
+div#headline2 img:last-of-type {
+  margin-right: 0;
+}
+
+#headline2 {
+  width: 241px;
+  left: 0px;
+  top: 486px;
+  z-index: 50;
+  right: 0;
+  margin: auto;
+}
+
+#headline2 img {
+  opacity: 0;
+}
+
+#cta {
+  left: 83px;
+  width: 105px;
+  height: 30px;
+  top: 527px;
+}

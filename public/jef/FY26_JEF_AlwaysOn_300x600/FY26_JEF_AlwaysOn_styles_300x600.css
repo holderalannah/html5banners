@@ -1,0 +1,94 @@
+body { 
+    margin:0; 
+    padding:0; 
+}
+
+#banner {
+    width: 300px; 
+    height: 600px;
+    background:#f5f5f5;
+    position: relative;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+#bg, #border, #bottle, #cta, #logo, #headline, #headline2, #headline3, #clickthru, #cta-mouseover {
+    position: absolute;
+}
+
+#clickthru { 
+    width: 300px; 
+    height: 600px; 
+    z-index: 98; 
+    cursor: pointer; 
+    background-color:rgba(0, 0, 0, 0);
+    top: 0;
+    left: 0;
+}
+
+#bg {
+    top:0; 
+    left:0;
+    width:100%; 
+    height:100%;
+    object-fit:cover;
+}
+
+#border {
+  width: 298px;
+  height: 598px;
+  border: 1px solid #AAA;
+  pointer-events:none;
+  z-index: 50;
+  display: block;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+
+#logo {
+    top: 534px;
+    left: 140px;
+    opacity: 0;
+    z-index: 11;
+}
+
+#headline,
+#headline2,
+#headline3 {
+    opacity: 0;
+    z-index: 9;
+
+}
+
+#headline {
+    top: 24px;
+    left: 45px;
+}
+
+#headline2 {
+    top: 56px;
+    left: 50px;
+}
+
+#headline3 {
+    top: 124px;
+    left: 94px;
+}
+
+#bottle {
+  width: 100%;
+  height: 100%;
+  left: -1px;
+  top: 131px;
+  z-index: 10;
+  opacity: 0;
+}
+
+#cta {
+    top: 534px;
+    left: 21px;
+    opacity: 0;
+    z-index: 11;
+}
