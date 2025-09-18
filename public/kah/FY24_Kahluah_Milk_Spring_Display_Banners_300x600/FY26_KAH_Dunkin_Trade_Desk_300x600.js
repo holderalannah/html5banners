@@ -39,7 +39,7 @@ function build_timelines() {
 	.to("#bg", {duration:0, opacity:1, ease:"power0.out"}, "fr1+=0")
 	.to("#border", {duration:0, opacity:1, ease:"power0.out"}, "fr1+=0")
 
-	.fromTo("#liqor", {x:0, opacity:0},{duration:0.2, x:0, opacity:1, transformOrigin: "0% 0%", ease:"circ.out"}, "fr1+=0")
+	.fromTo("#liqor", {x:0},{duration:0.2, x:0, transformOrigin: "0% 0%", ease:"circ.out"}, "fr1+=0")
 	//.fromTo("#cta", {scale:1, opacity:0},{duration:0.35, opacity:1, scale:1, transformOrigin: "50% 50%", ease:"circ.out"}, "fr1+=0")
 	.fromTo("#pour", {clip:"rect(0px, 71px, 0px, 0px)", opacity:0}, {duration:0.2, clip:"rect(0px, 710px, 283px, 0px)", opacity:1, transformOrigin: "100% 0%", ease:"sine.out"}, "fr1+=0.5")
 	.fromTo("#pour", {rotation:0}, {duration: 2, rotation: 3, transformOrigin: "100% 0%", ease:"sine.out"}, "fr1+=0.75")
