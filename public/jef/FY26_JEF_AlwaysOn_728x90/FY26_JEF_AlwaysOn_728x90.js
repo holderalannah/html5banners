@@ -37,9 +37,15 @@ tl
     .to("#bg", {duration:0.01, opacity:1, ease:"power0.out"})
 	.fromTo("#border", {opacity: 0 }, { duration: 0, opacity: 1, ease:"power0.out"})
 
-	.fromTo("#headline", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.2, duration: 0.3, stagger: 1, ease: "power1.out" })
-	.fromTo("#headline2", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.2, duration: 0.3, stagger: 1, ease: "power1.out" })
-	.fromTo("#headline3", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.2, duration: 0.3, stagger: 1, ease: "power1.out" })
+	.to("#headline", {x: 0, y: 0, opacity: 1, delay: 0.1, duration: 0.35, stagger: 1, ease: "power2.out" })
+	.to("#headline2", {x: 0, y: 0, opacity: 1, delay: 0.15, duration: 0.35, stagger: 1, ease: "power2.out" })
+	.to("#headline3", {x: 0, y: 0, opacity: 1, delay: 0.15, duration: 0.35, stagger: 1, ease: "power2.out" })
+
+	.to("#firstGroup", {opacity: 0, delay: 0.1, stagger: 0.75, ease: "power1.out"})
+
+	.fromTo("#headline4", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.2, duration: 0.3, stagger: 1, ease: "power1.out" })
+	.fromTo("#headline5", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.2, duration: 0.3, stagger: 1, ease: "power1.out" })
+	.fromTo("#headline6", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.2, duration: 0.3, stagger: 1, ease: "power1.out" })
 
 	.fromTo("#cta", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.4, duration: 0.3, stagger: 1, ease: "power1.out" },"start")
 	.fromTo("#logo", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.4, duration: 0.3, stagger: 1, ease: "power1.out" },"start")

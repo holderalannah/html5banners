@@ -13,7 +13,7 @@ body {
     cursor: pointer;
 }
 
-#bg, #border, #cta, #logo, #headline, #headline2, #headline3, #clickthru, #cta-mouseover {
+#bg, #border, #cta, #logo, #headline, #headline2, #headline3, #headline4, #headline5, #headline6, #clickthru, #cta-mouseover {
     position: absolute;
 }
 
@@ -53,23 +53,41 @@ body {
     opacity: 0;
 }
 
-#headlines {
+#secondGroup {
     width: 396px;
 }
 
 #headline {
     top: 24px;
+    left: 25px;
+    transform: translate(0px, -60px);
+}
+
+#headline2 {
+    top: 24px;
+    left: 268px;
+    transform: translate(0px, -60px);
+}
+
+#headline3 {
+    top: 24px;
+    left: 464px;
+    transform: translate(0px, -60px);
+}
+
+#headline4 {
+    top: 24px;
     left: 15px;
     opacity: 0;
 }
 
-#headline2 {
+#headline5 {
     top: 24px;
     left: 225px;
     opacity: 0;
 }
 
-#headline3 {
+#headline6 {
     top: 24px;
     left: 347px;
     opacity: 0;

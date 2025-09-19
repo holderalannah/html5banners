@@ -1,3 +1,4 @@
+import Link from "next/link"
 import Heading from "../Components/Heading"
 import ListItem from "../Components/ListItem"
 import List from "../Components/List"
@@ -37,7 +38,7 @@ export default function Home() {
          <Section>
           <Heading>TGL Campaign</Heading>
            <List>{links.map((link) => 
-            <ListItem key={link.href}><a className="underline hover:no-underline focus:no-underline" href={link.href}>{link.text}</a></ListItem>
+            <ListItem key={link.href}><Link className="underline hover:no-underline focus:no-underline" href={link.href}>{link.text}</Link></ListItem>
           )}</List>
          </Section>
          

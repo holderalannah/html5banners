@@ -13,7 +13,7 @@ body {
     cursor: pointer;
 }
 
-#bg, #border, #bottle, #cta, #logo, #headline, #headline2, #headline3, #clickthru, #cta-mouseover {
+#bg, #border, #bottle, #cta, #logo, #headline, #headline2, #headline3, #headline4, #headline5, #headline6, #clickthru, #cta-mouseover {
     position: absolute;
 }
 
@@ -55,18 +55,36 @@ body {
 }
 
 #headline {
-    top: 47px;
+    top: 54px;
     left: 11px;
     opacity: 0;
 }
 
 #headline2 {
+    top: 83px;
+    left: 24px;
+    opacity: 0;
+}
+
+#headline3 {
+    top: 111px;
+    left: 10px;
+    opacity: 0;
+}
+
+#headline4 {
+    top: 47px;
+    left: 11px;
+    opacity: 0;
+}
+
+#headline5 {
     top: 67px;
     left: 12px;
     opacity: 0;
 }
 
-#headline3 {
+#headline6 {
     top: 113px;
     left: 40px;
     opacity: 0;
