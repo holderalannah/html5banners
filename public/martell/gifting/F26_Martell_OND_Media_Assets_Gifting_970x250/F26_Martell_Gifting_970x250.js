@@ -1,7 +1,7 @@
-var width = 160;
-var height = 600;
-var movedisX = 160;
-var movedisY = 600;
+var width = 970;
+var height = 250;
+var movedisX = 970;
+var movedisY = 250;
 var tl;
 var atEndframe;
 var animLoaded = true;
@@ -40,13 +40,13 @@ tl
 
 	.from("#bird",{x: -100, y: 100, opacity: 0, delay: 0.1, duration: .85, stagger: 1, ease: "power2.out" },"start")
 
-	.fromTo("#medal", {opacity: 0, y: -30}, {y: 0, opacity: 1, duration: .75, stagger: 1, ease: "slow(0.9, 0.1, false)" } ,"start")
+	.fromTo("#medal", {opacity: 0, y: -18}, {y: 0, opacity: 1, duration: .75, stagger: 1, ease: "slow(0.9, 0.1, false)" } ,"start")
 	.fromTo("#bottle", {opacity: 0, y: 60}, {y: 0, opacity: 1, duration: .75, stagger: 1, ease: "slow(0.9, 0.1, false)" } ,"start")
 
 	.fromTo("#headline", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.08, duration: 0.3, stagger: 1, ease: "power1.out" })
 	.fromTo("#cta", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.08, duration: 0.3, stagger: 1, ease: "power1.out" })
 
-	.fromTo("#glow",  {opacity: 0}, {opacity: 1, duration: 2, backgroundPosition: "-297px 0", ease: "power1.out"}, "-=1")
+	.fromTo("#glow",  {opacity: 0}, {opacity: 1, duration: 2, backgroundPosition: "-414px 0", ease: "power1.out"}, "-=1")
 	
 	.call(function(){console.log('Animation Duration: ' + tl.time() + 's');})
 	.call(at_endframe);
