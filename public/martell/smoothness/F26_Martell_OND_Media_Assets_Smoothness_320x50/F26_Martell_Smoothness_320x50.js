@@ -1,7 +1,7 @@
-var width = 728;
-var height = 90;
-var movedisX = 728;
-var movedisY = 90;
+var width = 320;
+var height = 50;
+var movedisX = 320;
+var movedisY = 50;
 var tl;
 var atEndframe;
 var animLoaded = true;
@@ -38,12 +38,12 @@ tl
 
 
 	.from("#bird",{x: -100, y: 100, opacity: 0, delay: 0.1, duration: .85, stagger: 1, ease: "power2.out" }, "start")
-	.fromTo("#bottle", {opacity: 0, y: 50}, {y: -114, opacity: 1, duration: .75, stagger: 1, ease: "slow(0.9, 0.1, false)" },"start")
+	.fromTo("#bottle", {opacity: 0, y: 50}, {y: 0, opacity: 1, duration: .75, stagger: 1, ease: "slow(0.9, 0.1, false)" },"start")
 
 	.fromTo("#headline", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.1, duration: 0.3, stagger: 1, ease: "power1.out" })
 	.fromTo("#cta", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.1, duration: 0.3, stagger: 1, ease: "power1.out" })
 
-	.fromTo("#glow",  {opacity: 0}, {opacity: 1, duration: 1.5, backgroundPosition: "-115px 0", ease: "power1.out"}, "-=1")
+	.fromTo("#glow",  {opacity: 0}, {opacity: 1, duration: 2, backgroundPosition: "-39px 0", ease: "power1.out"}, "-=1")
 
 	
 	.call(function(){console.log('Animation Duration: ' + tl.time() + 's');})

@@ -42,46 +42,13 @@ window.onload = function() {
 //// first run
 
 function init_elements() {	
-	ad = getElm("ad");
-	//ad.style.visibility="visible";
-	//banner = getElm("banner");
-	//clickthru
+	ad = getElm("banner");
+
 	clickthru = getElm("clickthru");	
 	clickthru.addEventListener("mouseover", clickthru_over);
 	clickthru.addEventListener("mouseout", clickthru_out);
 	clickthru.addEventListener("click", clickthrough);
-	/*reply
-	buttonReplay = getElm("replayButton");
-	buttonReplay.addEventListener("mouseover", replay_over);
-	buttonReplay.addEventListener("mouseout", replay_out);
-	buttonReplay.addEventListener("click", replay_clicked);
-	*/
-	//
-	//isIE = /*@cc_on!@*/false || !!document.documentMode;
-	//if (isIE===true || isIEedge===true) { document.getElementById("ibmLogoImage").src = "../images/ibmlogo.png"; }
 }
-
-// function wait_for_async_loading() {
-// 	loadingTimerCount++;
-// 	if (loadingTimerCount < 10) { // 10 seconds total, check every 0.5/sec	
-// 		if (gsapLoaded===true && animLoaded===true) {
-// 			init_continue();
-// 		}		
-// 		else {			
-// 			if (window.TweenLite && window.CSSPlugin && window.TimelineLite) {
-// 				gsapLoaded=true;			
-// 			} 
-// 			if (!animLoaded) {
-// 				try { animLoaded = is_anim_loaded(); } catch(e) { }
-// 			}
-// 			loadingTimer = setTimeout(wait_for_async_loading, 100);
-// 		}
-// 	} else {
-// 		//show_endframe_manually();
-// 	}
-// }
-
-//window.addEventListener("load", initEB);
 
 
 //// FUNCTIONS
@@ -101,7 +68,6 @@ function clickthru_over() {
 	//console.log("atEndframe = " + atEndframe)
 	//console.log("arrowTL.isActive = " + !arrowTL.isActive())
 	if (atEndframe==true) {
-		//play_arrow();
 		custom_clickthru_over(); // in animation.js
 	}
 }
@@ -109,8 +75,6 @@ function clickthru_out() {
 	if (atEndframe==true) {
 	    custom_clickthru_out();
 	}
-	//arrowTL.pause();
-	//TweenLite.to("#ctaArrow", 0.2, {x:0, ease:"Power2.easeOut"} );
 }
 
 function clickthrough() {
@@ -119,26 +83,10 @@ function clickthrough() {
 	window.open(window.clickTag);
 }
 
-//replay
-/*
-function replay_over() {
-	//transformOrigin:"50% 50%", 
-	TweenLite.to("#replayButton", 0.5, {rotation:360, ease:"Power2.easeInOut"});
-}
-function replay_out() {
-	TweenLite.to("#replayButton", 0.5, {rotation:0, ease:"Power2.easeInOut"});
-}
-function replay_clicked() {
-	ad_begin();
-}
-*/
-//// MISC
 
 function getElm(id) { 
 	var returnElm;
 	if (document.getElementById(id)) { returnElm=document.getElementById(id); }
-	//else { returnElm=document.getElementById(id).childNodes[0]; }
-	//else { returnElm = document.getElementsByClassName(id)[0]; } // only the 1st
 	return returnElm;
 }
 

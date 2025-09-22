@@ -163,7 +163,6 @@ opacity: 0;
   left: 117px;
   top: 83px;
   z-index: 14;
-  opacity: 0;
 }
 
 #headline2 {
@@ -172,7 +171,6 @@ opacity: 0;
   left: 155px;
   top: 130px;
   z-index:50;
-  opacity:0;
 }
 
  #headline3 {
@@ -181,7 +179,6 @@ opacity: 0;
   left: 0px;
   top: 0px;
   z-index:1;
-  opacity:0;
 }
 
 /*CTA*/

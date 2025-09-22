@@ -38,7 +38,7 @@ tl
 
 
 	.from("#bird",{x: -100, y: 100, opacity: 0, delay: 0.1, duration: .85, stagger: 1, ease: "power2.out" }, "start")
-	.fromTo("#bottle", {opacity: 0, x: 50}, {x: 0, opacity: 1, duration: .75, stagger: 1, ease: "slow(0.9, 0.1, false)" },"start")
+	.fromTo("#bottle", {opacity: 0, x: -50}, {x: 0, opacity: 1, duration: .75, stagger: 1, ease: "slow(0.9, 0.1, false)" },"start")
 
 	.fromTo("#headline", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.1, duration: 0.3, stagger: 1, ease: "power1.out" })
 	.fromTo("#cta", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.1, duration: 0.3, stagger: 1, ease: "power1.out" })
