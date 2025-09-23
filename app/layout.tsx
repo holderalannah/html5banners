@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "HTML5 Banners",
-  description: "Showcases HTML5 Banners designed by Alannah Holder at Olivery Agency",
+  description: "Showcases HTML5 Banners designed by Alannah Holder at Oliver Agency",
 };
 
 export default function RootLayout({
