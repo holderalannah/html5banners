@@ -146,7 +146,7 @@ img { position:absolute; }
   height:100%; 
   left: 130px;
   top: 73px;
-  z-index: 6;
+  z-index: 8;
 }
 
 #headline2 {
