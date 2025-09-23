@@ -4,8 +4,8 @@ body {
 }
 
 #banner {
-    width: 970px; 
-    height: 250px;
+    width: 320px; 
+    height: 50px;
     background:#f5f5f5;
     position: relative;
     overflow: hidden;
@@ -18,8 +18,8 @@ body {
 }
 
 #clickthru { 
-    width: 970px; 
-    height: 250px; 
+    width: 320px; 
+    height: 50px; 
     z-index: 98; 
     cursor: pointer; 
     background-color:rgba(0, 0, 0, 0);
@@ -36,8 +36,8 @@ body {
 }
 
 #border {
-  width: 968px;
-  height: 248px;
+  width: 318px;
+  height: 48px;
   border: 1px solid #AAA;
   pointer-events:none;
   z-index: 50;
@@ -48,13 +48,13 @@ body {
 }
 
 #logo {
-    top: 83px;
-    left: 48px;
+    top: 11px;
+    left: 13px;
     z-index: 11;
 }
 
 #bird {
-    top: 29px;
+    top: 4px;
     transform: translate(-50%, -50%);
     overflow: hidden;
     z-index: 9;
@@ -78,7 +78,7 @@ body {
 }
 
 #glow {
-    mask: url('./F26_Martell_Versatility_bird_970x250.png');
+    mask: url('./F26_Martell_Versatility_bird_320x50.png'); /* Use the PNG as a mask */
     mask-size: contain;
     mask-repeat: no-repeat;
     content: "";
@@ -91,15 +91,14 @@ body {
     left:0; 
     right:0; 
     bottom:0;
-    background: radial-gradient(0 0,circle farthest-side, rgba(255,255,255,0) 90%,rgba(255,255,255,.8) 98%,rgba(255,255,255,0) 100%) no-repeat;
-    background: radial-gradient(circle farthest-side at 0 0, rgba(255,255,255,0) 90%,rgba(255,255,255,.8) 98%,rgba(255,255,255,0) 100%) no-repeat;
-    background-position: 30px 0;
+    background: linear-gradient(75deg,  rgba(255, 255, 255, 0) 80%,  rgba(255, 255, 255, 0.8) 70%, rgba(255, 255, 255, 0) 100% )  no-repeat;
+    background-position: 40px 0;
     background-repeat: no-repeat;
 }
 
 #cocktail1 {
-    top: 110px;
-    left: 445px;
+    top: 11px;
+    left: 115px;
     opacity: 0;
     z-index: 12;
 }
@@ -107,15 +106,15 @@ body {
 #bottle {
     width: 100%;
     height: 100%;
-    left: 505px;
-    top: 5px;
+    left: 136px;
+    top: -25px;
     z-index: 10;
     opacity: 0;
 }
 
 #cocktail2 {
-    top: 126px;
-    left: 564px;
+    top: 14px;
+    left: 165px;
     opacity: 0;
     z-index: 12;
 }
@@ -123,13 +122,13 @@ body {
 #headline {
     opacity: 0;
     z-index: 12;
-    top: 36px;
-    left: 614px;
+    top: 0px;
+    left: 193px;
 }
 
 #cta {
-    top: 124px;
-    left: 692px;
+    top: 30px;
+    left: 230px;
     opacity: 0;
     z-index: 11;
 }

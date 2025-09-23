@@ -8,9 +8,29 @@ export default function Home() {
 
   const versatileLinks = [
     {
+      text: "Versatile - 160x600",
+      href: "../../martell/versatile/F26_Martell_OND_Media_Assets_Versatile_160x600/index.html"
+    },
+    {
+      text: "Versatile - 300x250",
+      href: "../../martell/versatile/F26_Martell_OND_Media_Assets_Versatile_300x250/index.html"
+    },
+    {
       text: "Versatile - 300x600",
       href: "../../martell/versatile/F26_Martell_OND_Media_Assets_Versatile_300x600/index.html"
-    }
+    },
+    {
+      text: "Versatile - 320x50",
+      href: "../../martell/versatile/F26_Martell_OND_Media_Assets_Versatile_320x50/index.html"
+    },
+    {
+      text: "Versatile - 728x90",
+      href: "../../martell/versatile/F26_Martell_OND_Media_Assets_Versatile_728x90/index.html"
+    },
+      {
+      text: "Versatile - 970x250",
+      href: "../../martell/versatile/F26_Martell_OND_Media_Assets_Versatile_970x250/index.html"
+    },
   
   ];
 
