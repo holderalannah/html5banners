@@ -13,7 +13,7 @@ body {
     cursor: pointer;
 }
 
-#bg, #border, #bottle, #bird, #cta, #logo, #glow, #headline, #clickthru, #cta-mouseover {
+#bg, #border, #bottle, #bird, #glow, #cta, #logo, #medal, #headline, #clickthru, #cta-mouseover {
     position: absolute;
 }
 
@@ -36,20 +36,20 @@ body {
 }
 
 #border {
-    width: 318px; 
-    height: 48px;
-    border: 1px solid #AAA;
-    pointer-events:none;
-    z-index: 50;
-    display: block;
-    opacity: 0;
-    top: 0;
-    left: 0;
+  width: 318px;
+  height: 48px;
+  border: 1px solid #AAA;
+  pointer-events:none;
+  z-index: 50;
+  display: block;
+  opacity: 0;
+  top: 0;
+  left: 0;
 }
 
 #logo {
-    top: 19px;
-    left: 11px;
+    top: 17px;
+    left: 8px;
     z-index: 11;
 }
 
@@ -78,7 +78,7 @@ body {
 }
 
 #glow {
-    mask: url('./F26_Martell_Smoothness_bird_320x50.png');
+    mask: url('./F26_Martell_Gifting_bird_320x50.png'); /* Use the PNG as a mask */
     mask-size: contain;
     mask-repeat: no-repeat;
     content: "";
@@ -98,25 +98,32 @@ body {
     background-repeat: no-repeat;
 }
 
+#medal {
+    top: 23px;
+    left: 142px;
+    opacity: 0;
+    z-index: 12;
+}
+
 #bottle {
-  width: 100%;
-  height: 100%;
-  left: 103px;
-  top: -24px;
-  z-index: 10;
-  opacity: 0;
+    width: 100%;
+    height: 100%;
+    left: 111px;
+    top: -24px;
+    z-index: 10;
+    opacity: 0;
 }
 
 #headline {
     opacity: 0;
     z-index: 12;
-    top: 1px;
-    left: 135px;
+    top: 0px;
+    left: 164px;
 }
 
 #cta {
     top: 26px;
-    left: 147px;
+    left: 176px;
     opacity: 0;
     z-index: 11;
 }

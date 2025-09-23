@@ -16,7 +16,7 @@ export default function Home() {
       href: "../../martell/smoothness/F26_Martell_OND_Media_Assets_Smoothness_300x600/index.html"
     },
     {
-      text: "ersatile - 300x600",
+      text: "Versatile - 300x600",
       href: "../../martell/versatile/F26_Martell_OND_Media_Assets_Versatile_300x600/index.html"
     }
   
@@ -26,6 +26,7 @@ export default function Home() {
     <>
          <Section>
           <Heading>Martell OND Media Assets</Heading>
+           <h3>Smoothness</h3>
            <List>{links.map((link) => 
             <ListItem key={link.href}><Link className="underline hover:no-underline focus:no-underline" href={link.href}>{link.text}</Link></ListItem>
           )}</List>

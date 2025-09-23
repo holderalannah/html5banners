@@ -22,8 +22,8 @@ div { position:absolute; display:block; }
 img { position:absolute; }
 
 #ad, #banner {
-   width:300px; 
-   height:600px; 
+   width:970px; 
+   height:250px; 
 }
 
 #ad {   
@@ -40,8 +40,8 @@ img { position:absolute; }
 }
 
 #border {
-  width: 298px;
-  height: 598px;
+  width: 968px;
+  height: 248px;
   border: 1px solid #AAA;
   pointer-events:none;
   z-index:50;
@@ -60,8 +60,8 @@ img { position:absolute; }
 }
 
 #clickthru { 
-  width:300px; 
-  height:600px; 
+  width:970px; 
+  height:250px; 
   z-index:98; 
   cursor:pointer; 
   background-color:rgba(0, 0, 0, 0);
@@ -85,8 +85,8 @@ img { position:absolute; }
 }
 
 #logo {
-  top: 18px;
-  left: 129px;
+  top: 17px;
+  left: 411px;
   width:100%;
   height:100%;
   z-index:10;
@@ -95,34 +95,33 @@ img { position:absolute; }
 #bottle {
   width:100%;
   height:100%;
-  left: 6px;
-  top: 23px;
+  left: 19px;
+  top: 0px;
   z-index:10;
   opacity: 0;
 }
 
 #pour {
-width:100%;
-height:100%;
-left: 228px;
-top: 19px;
-z-index: 13;
-opacity: 0;
+  width:100%;
+  height:100%;
+  left: 236px;
+  top: -120px ; 
+  z-index: 6;
+  opacity: 0;
 }
 
 #liqor {
-left: 144px;
-top: 276px;
-z-index:13;
+  left: 148px;
+  top: 77px;
+  z-index:6;
 }
 
-/*lockup*/
 #badge {
 width:100%;
 height:100%;
 left: 0px;
 top: 0px;
-z-index:1;
+z-index: 5;
 opacity: 0;
 }
 
@@ -145,22 +144,22 @@ opacity: 0;
 #headline1 {
   width:100%; 
   height:100%; 
-  left: 117px;
-  top: 83px;
+  left: 642px;
+  top: 31px;
   z-index: 14;
 }
 
 #headline2 {
   width:100%; 
   height:100%; 
-  left: 155px;
-  top: 130px;
+  left: 413px;
+  top: 124px;
   z-index:50;
 }
 
 #cta {
   width:100%;
   height:100%;
-  left: 0px;
-  top: 0px;
+  left: 567px;
+  top: 162px;
 }

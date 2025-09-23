@@ -1,7 +1,7 @@
-var width = 320;
-var height = 50;
-var movedisX = 320;
-var movedisY = 50;
+var width = 160;
+var height = 600;
+var movedisX = 160;
+var movedisY = 600;
 var tl;
 var atEndframe;
 var animLoaded = true;
@@ -36,15 +36,16 @@ tl
 	.to("#bg", {duration: 0, opacity: 1, ease:"power0.out"})
 	.to("#border", {duration: 0, opacity: 1, ease:"power0.out"})
 
+	.from("#bird",{x: -100, y: 100, opacity: 0, delay: 0.1, duration: .85, stagger: 1, ease: "power2.out" },"start")
 
-	.from("#bird",{x: -100, y: 100, opacity: 0, delay: 0.1, duration: .85, stagger: 1, ease: "power2.out" }, "start")
-	.fromTo("#bottle", {opacity: 0, y: 50}, {y: 0, opacity: 1, duration: .75, stagger: 1, ease: "slow(0.9, 0.1, false)" },"start")
+	.fromTo("#cocktail1", {opacity: 0, x:-30}, {x: 0, opacity: 1, duration: .8, stagger: 1, ease: "slow(0.9, 0.1, false)" } ,"start")
+	.fromTo("#bottle", {opacity: 0, y: -50}, {y: 0, opacity: 1, duration: .8, stagger: 1, ease: "slow(0.9, 0.1, false)" } ,"start")
+	.fromTo("#cocktail2", {opacity: 0, x:30}, {x: 0, opacity: 1, duration: .8, stagger: 1, ease: "slow(0.9, 0.1, false)" } ,"start")
 
-	.fromTo("#headline", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.1, duration: 0.3, stagger: 1, ease: "power1.out" })
-	.fromTo("#cta", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.1, duration: 0.3, stagger: 1, ease: "power1.out" })
+	.fromTo("#headline", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.08, duration: 0.3, stagger: 1, ease: "power1.out" })
+	.fromTo("#cta", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.08, duration: 0.3, stagger: 1, ease: "power1.out" })
 
-	.fromTo("#glow",  {opacity: 0}, {opacity: 1, duration: 2, backgroundPosition: "-42px 0", ease: "power1.out"}, "-=1")
-
+	.fromTo("#glow",  {opacity: 0}, {opacity: 1, duration: 2, backgroundPosition: "-297px 0", ease: "power1.out"}, "-=1")
 	
 	.call(function(){console.log('Animation Duration: ' + tl.time() + 's');})
 	.call(at_endframe);

@@ -4,8 +4,8 @@ body {
 }
 
 #banner {
-    width: 320px; 
-    height: 50px;
+    width: 160px; 
+    height: 600px;
     background:#f5f5f5;
     position: relative;
     overflow: hidden;
@@ -13,13 +13,13 @@ body {
     cursor: pointer;
 }
 
-#bg, #border, #bottle, #bird, #cta, #logo, #glow, #headline, #clickthru, #cta-mouseover {
+#bg, #border, #bottle, #bird, #cta, #cocktail1, #cocktail2, #logo, #headline, #clickthru, #cta-mouseover {
     position: absolute;
 }
 
 #clickthru { 
-    width: 320px; 
-    height: 50px; 
+    width: 160px; 
+    height: 600px; 
     z-index: 98; 
     cursor: pointer; 
     background-color:rgba(0, 0, 0, 0);
@@ -36,25 +36,25 @@ body {
 }
 
 #border {
-    width: 318px; 
-    height: 48px;
-    border: 1px solid #AAA;
-    pointer-events:none;
-    z-index: 50;
-    display: block;
-    opacity: 0;
-    top: 0;
-    left: 0;
+  width: 158px;
+  height: 598px;
+  border: 1px solid #AAA;
+  pointer-events:none;
+  z-index: 50;
+  display: block;
+  opacity: 0;
+  top: 0;
+  left: 0;
 }
 
 #logo {
-    top: 19px;
-    left: 11px;
+    top: 61px;
+    left: 13px;
     z-index: 11;
 }
 
 #bird {
-    top: 9px;
+    top: 26px;
     transform: translate(-50%, -50%);
     overflow: hidden;
     z-index: 9;
@@ -78,7 +78,7 @@ body {
 }
 
 #glow {
-    mask: url('./F26_Martell_Smoothness_bird_320x50.png');
+    mask: url('./F26_Martell_Versatility_bird_160x600.png'); /* Use the PNG as a mask */
     mask-size: contain;
     mask-repeat: no-repeat;
     content: "";
@@ -92,31 +92,44 @@ body {
     right:0; 
     bottom:0;
     background: radial-gradient(0 0,circle farthest-side, rgba(255,255,255,0) 90%,rgba(255,255,255,.8) 98%,rgba(255,255,255,0) 100%) no-repeat;
-    /* background: radial-gradient(circle farthest-side at 0 0, rgba(255,255,255,0) 90%,rgba(255,255,255,.8) 98%,rgba(255,255,255,0) 100%) no-repeat; */
-    background: linear-gradient(75deg,  rgba(255, 255, 255, 0) 80%,  rgba(255, 255, 255, 0.8) 70%, rgba(255, 255, 255, 0) 100% )  no-repeat;
-    background-position: 40px 0;
+    background: radial-gradient(circle farthest-side at 0 0, rgba(255,255,255,0) 90%,rgba(255,255,255,.8) 98%,rgba(255,255,255,0) 100%) no-repeat;
+    background-position: 15px 0;
     background-repeat: no-repeat;
 }
 
+#cocktail1 {
+    top: 263px;
+    left: 21px;
+    opacity: 0;
+    z-index: 12;
+}
+
 #bottle {
-  width: 100%;
-  height: 100%;
-  left: 103px;
-  top: -24px;
-  z-index: 10;
-  opacity: 0;
+    width: 100%;
+    height: 100%;
+    left: 15px;
+    top: 116px;
+    z-index: 10;
+    opacity: 0;
+}
+
+#cocktail2 {
+    top: 283px;
+    left: 175px;
+    opacity: 0;
+    z-index: 12;
 }
 
 #headline {
     opacity: 0;
     z-index: 12;
-    top: 1px;
-    left: 135px;
+    top: 425px;
+    left: 12px;
 }
 
 #cta {
-    top: 26px;
-    left: 147px;
+    top: 516px;
+    left: 81px;
     opacity: 0;
     z-index: 11;
 }

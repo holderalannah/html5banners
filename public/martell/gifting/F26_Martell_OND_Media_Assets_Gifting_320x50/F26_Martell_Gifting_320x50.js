@@ -33,18 +33,20 @@ function build_timelines() {
 tl = gsap.timeline({ paused:true });
 tl
 
-	.to("#bg", {duration: 0, opacity: 1, ease:"power0.out"})
-	.to("#border", {duration: 0, opacity: 1, ease:"power0.out"})
+	.to("#bg", {duration: 0, opacity: 1, ease:"power0.out"}, "fr1+=0")
+	.to("#border", {duration: 0, opacity: 1, ease:"power0.out"}, "fr1+=0")
 
+	
 
-	.from("#bird",{x: -100, y: 100, opacity: 0, delay: 0.1, duration: .85, stagger: 1, ease: "power2.out" }, "start")
-	.fromTo("#bottle", {opacity: 0, y: 50}, {y: 0, opacity: 1, duration: .75, stagger: 1, ease: "slow(0.9, 0.1, false)" },"start")
+	.from("#bird",{x: -100, y: 100, opacity: 0, delay: 0.1, duration: .85, stagger: 1, ease: "power2.out" },"start")
 
-	.fromTo("#headline", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.1, duration: 0.3, stagger: 1, ease: "power1.out" })
-	.fromTo("#cta", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.1, duration: 0.3, stagger: 1, ease: "power1.out" })
+	.fromTo("#medal", {opacity: 0, x: 10}, {x: 0, opacity: 1, duration: .75, stagger: 1, ease: "slow(0.9, 0.1, false)" } ,"start")
+	.fromTo("#bottle", {opacity: 0, y: 60}, {y: 0, opacity: 1, duration: .75, stagger: 1, ease: "slow(0.9, 0.1, false)" } ,"start")
+
+	.fromTo("#headline", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.08, duration: 0.3, stagger: 1, ease: "power1.out" })
+	.fromTo("#cta", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.08, duration: 0.3, stagger: 1, ease: "power1.out" })
 
 	.fromTo("#glow",  {opacity: 0}, {opacity: 1, duration: 2, backgroundPosition: "-42px 0", ease: "power1.out"}, "-=1")
-
 	
 	.call(function(){console.log('Animation Duration: ' + tl.time() + 's');})
 	.call(at_endframe);
