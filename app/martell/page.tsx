@@ -26,7 +26,6 @@ export default function Home() {
     <>
          <Section>
           <Heading>Martell OND Media Assets</Heading>
-           <h3>Smoothness</h3>
            <List>{links.map((link) => 
             <ListItem key={link.href}><Link className="underline hover:no-underline focus:no-underline" href={link.href}>{link.text}</Link></ListItem>
           )}</List>
