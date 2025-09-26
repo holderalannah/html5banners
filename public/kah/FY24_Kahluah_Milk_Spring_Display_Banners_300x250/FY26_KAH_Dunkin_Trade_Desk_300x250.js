@@ -39,8 +39,8 @@ function build_timelines() {
 	.to("#border", {duration:0, opacity:1, ease:"power0.out"}, "fr1+=0")
 
 	.fromTo("#pour", {clip:"rect(0px, 71px, 0px, 0px)", opacity:0}, {duration:0.2, clip:"rect(0px, 710px, 283px, 0px)", opacity:1, transformOrigin: "100% 0%", ease:"sine.out"}, "start")
-	.fromTo("#pour", {rotation:0}, {duration: 2, rotation: 3, transformOrigin: "100% 0%", ease:"sine.out"})
-	.to("#pour", {duration: 1.5, rotation: 0.9, transformOrigin: "100% 0%", top: "0px", ease:"sine.out"})
+	.fromTo("#pour", {rotation:0}, {duration: 2, rotation: 3.4, transformOrigin: "100% 0%", ease:"sine.out"})
+	.to("#pour", {duration: 1.5, rotation: 0.9, transformOrigin: "100% 0%", top: "-84px", ease:"sine.out"})
 	// .fromTo("#badge", {scale:0.5, opacity:0},{duration:0.25, opacity:1, scale:1, transformOrigin: "50% 50%", ease:"power2.out"},1)
 
 	.add("ef1", "+=0")
