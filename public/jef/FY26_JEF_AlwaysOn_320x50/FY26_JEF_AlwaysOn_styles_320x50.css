@@ -48,15 +48,15 @@ body {
 }
 
 #logo {
-    top: 8px;
-    left: 165px;
+    top: 6px;
+    left: 166px;
     opacity: 0;
 }
 
 #cta {
-    top: 8px;
-    left: 21px;
-    width: 108px;
+    top: 5px;
+    left: 22px;
+    width: 111px;
     opacity: 0;
-    height: 27px;
+    height: 29px;
 }

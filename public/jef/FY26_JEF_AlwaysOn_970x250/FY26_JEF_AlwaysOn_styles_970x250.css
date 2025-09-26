@@ -13,7 +13,7 @@ body {
     cursor: pointer;
 }
 
-#bg, #border, #bottle, #cta, #logo, #headline, #headline2, #headline3, #clickthru, #cta-mouseover {
+#bg, #border, #bottle, #cta, #logo, #headline, #headline2, #headline3, #headline4, #headline5, #headline6, #headline_a,#headline_bourbon, #clickthru, #cta-mouseover {
     position: absolute;
 }
 
@@ -73,6 +73,21 @@ body {
 }
 
 #headline3 {
+    top: 59px;
+    left: 682px;
+}
+
+#headline4 {
+    top: 20px;
+    left: 478px;
+}
+
+#headline5 {
+    top: 59px;
+    left: 387px;
+}
+
+#headline6 {
     top: 59px;
     left: 682px;
 }
