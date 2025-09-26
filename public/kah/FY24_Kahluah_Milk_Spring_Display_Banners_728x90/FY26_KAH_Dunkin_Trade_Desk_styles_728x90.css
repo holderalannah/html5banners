@@ -113,7 +113,7 @@ img { position:absolute; }
 #liqor {
   left: 80px;
   top: 12px;
-  z-index:6;
+  z-index: 16;
 }
 
 /*lockup*/

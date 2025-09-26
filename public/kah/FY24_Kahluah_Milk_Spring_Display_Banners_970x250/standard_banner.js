@@ -100,15 +100,15 @@ function ad_times_up() {
 function clickthru_over() {
 	//console.log("atEndframe = " + atEndframe)
 	//console.log("arrowTL.isActive = " + !arrowTL.isActive())
-	if (atEndframe==true) {
+	//if (atEndframe==true) {
 		//play_arrow();
 		custom_clickthru_over(); // in animation.js
-	}
+	//}
 }
 function clickthru_out() {
-	if (atEndframe==true) {
+	//if (atEndframe==true) {
 	    custom_clickthru_out();
-	}
+	//}
 	//arrowTL.pause();
 	//TweenLite.to("#ctaArrow", 0.2, {x:0, ease:"Power2.easeOut"} );
 }

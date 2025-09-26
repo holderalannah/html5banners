@@ -37,18 +37,31 @@ tl
     .to("#bg", {duration:0.01, opacity:1, ease:"power0.out"})
 	.fromTo("#border", {opacity: 0 }, { duration: 0, opacity: 1, ease:"power0.out"})
 
-	.to("#headline", {x: 0, y: 0, opacity: 1, delay: 0.1, duration: 0.35, stagger: 1, ease: "power2.out" })
-	.to("#headline2", {x: 0, y: 0, opacity: 1, delay: 0.15, duration: 0.35, stagger: 1, ease: "power2.out" })
-	.to("#headline3", {x: 0, y: 0, opacity: 1, delay: 0.15, duration: 0.35, stagger: 1, ease: "power2.out" })
+	.fromTo("#headline_a", {x: 115 }, { x: 0, delay:0.2, duration: 0.25, stagger: 1, ease: "slow(0.9, 0.1, false)" })
+	.fromTo("#headline_bourbon", {x: -115 }, { x:0, duration: 0.25, stagger: 1, ease: "slow(0.9, 0.1, false)" }, "<")
 
-	.to("#firstGroup", {opacity: 0, delay: 0.1, stagger: 0.75, ease: "power1.out"})
+	.fromTo("#headline", {opacity:0 },{opacity: 1, delay: 0.1, duration: 0.25, stagger: 1, ease: "slow(0.9, 0.1, false)" })
+	.to("#headline", {opacity: 0, delay: 0.2, stagger: 0.75, ease: "power1.out"})
 
-	.fromTo("#headline4", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.2, duration: 0.3, stagger: 1, ease: "power1.out" })
-	.fromTo("#headline5", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.2, duration: 0.3, stagger: 1, ease: "power1.out" })
-	.fromTo("#headline6", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.2, duration: 0.3, stagger: 1, ease: "power1.out" })
+	.to("#headline_a", { x: 22, delay:0.1, duration: 0.2, stagger: 1, ease: "slow(0.9, 0.1, false)" })
+	.to("#headline_bourbon", { x:-21, duration: 0.1, stagger: 1, ease: "slow(0.9, 0.1, false)" }, "<")
 
-	.fromTo("#cta", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.4, duration: 0.3, stagger: 1, ease: "power1.out" },"start")
-	.fromTo("#logo", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.4, duration: 0.3, stagger: 1, ease: "power1.out" },"start")
+	.fromTo("#headline2", {opacity:0 },{ opacity: 1, delay: 0.2, duration: 0.25, stagger: 1, ease: "slow(0.9, 0.1, false)" })
+	.to("#headline2", {opacity: 0, delay: 0.1, stagger: 0.75, ease: "power1.out"})
+
+	.to("#headline_a", { x: -4, delay:0.1, duration: 0.25, stagger: 1, ease: "slow(0.9, 0.1, false)" })
+	.to("#headline_bourbon", { x: 4, duration: 0.25, stagger: 1, ease: "slow(0.9, 0.1, false)" }, "<")
+
+	.fromTo("#headline3", { opacity: 0 },{ opacity: 1, delay: 0.2, duration: 0.25, stagger: 1, ease: "slow(0.9, 0.1, false)" })
+
+	.to("#firstGroup", {opacity: 0, delay: 0.2, stagger: 0.75, ease: "power1.out"})
+
+	.fromTo("#headline4", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.05, duration: 0.25, stagger: 1, ease: "power1.out" })
+	.fromTo("#headline5", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.05, duration: 0.25, stagger: 1, ease: "power1.out" })
+	.fromTo("#headline6", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.05, duration: 0.25, stagger: 1, ease: "power1.out" })
+
+	.fromTo("#cta", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.05, duration: 0.25, stagger: 1, ease: "power1.out" }, "start")
+	.fromTo("#logo", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.05, duration: 0.25, stagger: 1, ease: "power1.out" }, "start")
 	
 	.call(function(){console.log('Animation Duration: ' + tl.time() + 's');})
 	.call(at_endframe);

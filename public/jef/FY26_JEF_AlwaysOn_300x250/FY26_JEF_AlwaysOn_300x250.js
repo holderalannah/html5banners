@@ -36,12 +36,25 @@ tl
 	.to("#bg", {duration: 0, opacity: 1, ease:"power0.out"}, "fr1+=0")
 	.to("#border", {duration: 0, opacity: 1, ease:"power0.out"}, "fr1+=0")
 
-	.fromTo("#headline", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.5, duration: 0.3, stagger: 1, ease: "power1.out" })
-	.fromTo("#headline2", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.2, duration: 0.3, stagger: 1, ease: "power1.out" })
-	.fromTo("#headline3", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.2, duration: 0.3, stagger: 1, ease: "power1.out" })
+	.fromTo("#headline_a", {y: 15 }, { y: 0, delay:0.25, duration: 0.2, stagger: 1, ease: "slow(0.9, 0.1, false)" })
+	.fromTo("#headline_bourbon", {y: -14 }, { y: 0, duration: 0.2, stagger: 1, ease: "slow(0.9, 0.1, false)" }, "<")
 
-	.fromTo("#cta", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.3, duration: 0.3, stagger: 1, ease: "power1.out" },"start")
-	.fromTo("#logo", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.3, duration: 0.3, stagger: 1, ease: "power1.out" },"start")
+	.fromTo("#headline", {opacity:0 },{opacity: 1, delay: 0.2, duration: 0.25, stagger: 1, ease: "slow(0.9, 0.1, false)" })
+	.to("#headline", {opacity: 0, delay: 0.2, stagger: 0.75, ease: "power1.out"})
+
+	.fromTo("#headline2", {opacity:0 },{ opacity: 1, delay: 0.25, duration: 0.25, stagger: 1, ease: "slow(0.9, 0.1, false)" })
+	.to("#headline2", {opacity: 0, delay: 0.2, stagger: 0.75, ease: "power1.out"})
+
+	.fromTo("#headline3", { opacity:0 },{ opacity: 1, delay: 0.2, duration: 0.25, stagger: 1, ease: "slow(0.9, 0.1, false)" })
+
+	.to("#firstGroup", {opacity: 0, delay: 0.2, stagger: 0.75, ease: "power1.out"})
+
+	.fromTo("#headline4", { opacity:0 },{ opacity: 1, delay: 0.05, duration: 0.25, stagger: 1, ease: "power1.out" })
+	.fromTo("#headline5", { opacity:0 },{ opacity: 1, delay: 0.05, duration: 0.25, stagger: 1, ease: "power1.out" })
+	.fromTo("#headline6", { opacity:0 },{ opacity: 1, delay: 0.05, duration: 0.25, stagger: 1, ease: "power1.out" })
+
+	.fromTo("#cta", {x:0, opacity:0 },{ opacity: 1, delay: 0.05, duration: 0.25, stagger: 1, ease: "power1.out" }, "start")
+	.fromTo("#logo", {x:0, opacity:0 },{ opacity: 1, delay: 0.05, duration: 0.25, stagger: 1, ease: "power1.out" }, "start")
 	
 	.call(function(){console.log('Animation Duration: ' + tl.time() + 's');})
 	.call(at_endframe);

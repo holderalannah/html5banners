@@ -13,7 +13,7 @@ body {
     cursor: pointer;
 }
 
-#bg, #border, #bottle, #cta, #logo, #headline, #headline2, #headline3, #clickthru, #cta-mouseover {
+#bg, #border, #bottle, #cta, #logo, #headline, #headline2, #headline3, #headline4, #headline5, #headline6, #stars, #clickthru, #cta-mouseover {
     position: absolute;
 }
 
@@ -48,8 +48,8 @@ body {
 }
 
 #logo {
-    top: 534px;
-    left: 140px;
+    top: 484px;
+    left: 147px;
     opacity: 0;
     z-index: 11;
 }
@@ -62,19 +62,40 @@ body {
 
 }
 
+#headline4,
+#headline5,
+#headline6 {
+    z-index: 10;
+}
+
 #headline {
-    top: 24px;
-    left: 45px;
+    top: 48px;
+    left: 34px;
 }
 
 #headline2 {
-    top: 56px;
-    left: 50px;
+    top: 93px;
+    left: 59px;
 }
 
 #headline3 {
-    top: 124px;
-    left: 94px;
+    top: 139px;
+    left: 34px;
+}
+
+#headline4 {
+    top: 30px;
+    left: 43px;
+}
+
+#headline5 {
+    top: 65px;
+    left: 45px;
+}
+
+#headline6 {
+    top: 65px;
+    left: 183px;
 }
 
 #bottle {
@@ -82,13 +103,20 @@ body {
   height: 100%;
   left: -1px;
   top: 131px;
+  /* top: 82px; */
   z-index: 10;
   opacity: 0;
 }
 
 #cta {
-    top: 534px;
-    left: 21px;
+    top: 486px;
+    left: 12px;
     opacity: 0;
     z-index: 11;
+}
+
+#stars {
+    top: 530px;
+    left: 80px;
+    z-index: 10;
 }

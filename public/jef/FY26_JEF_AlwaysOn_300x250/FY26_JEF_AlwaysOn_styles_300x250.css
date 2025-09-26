@@ -13,7 +13,7 @@ body {
     cursor: pointer;
 }
 
-#bg, #border, #bottle, #cta, #logo, #headline, #headline2, #headline3, #clickthru, #cta-mouseover {
+#bg, #border, #bottle, #cta, #logo, #firstGroup, #headline, #headline2, #headline3, #headline4, #headline5, #headline6, #headline_a,#headline_bourbon, #stars, #clickthru, #cta-mouseover {
     position: absolute;
 }
 
@@ -48,33 +48,69 @@ body {
 }
 
 #logo {
-    top: 165px;
-    left: 29px;
+    top: 102px;
+    left: 30px;
     opacity: 0;
     z-index: 11;
 }
+
+div#firstGroup,
+#headline_a,
+#headline_bourbon,
+#headline,
+#headline2,
+#headline3,
+#headline4,
+#headline5,
+#headline6 {
+    z-index: 16;
+}
+
+div#headline_a {
+    top: 80px;
+    left: 84px;
+}
+
+div#headline_bourbon {
+    top: 133px;
+    left: 31px;
+}
+
 
 #headline,
 #headline2,
 #headline3 {
     opacity: 0;
-    z-index: 11;
-
 }
 
 #headline {
-    top: 39px;
-    left: 24px;
+    top: 102px;
+    left: 23px;
 }
 
 #headline2 {
-    top: 58px;
-    left: 24px;
+    top: 102px;
+    left: 38px;
 }
 
 #headline3 {
-    top: 100px;
-    left: 51px;
+    top: 102px;
+    left: 23px;
+}
+
+#headline4 {
+    top: 29px;
+    left: 29px;
+}
+
+#headline5 {
+    top: 50px;
+    left: 29px;
+}
+
+#headline6 {
+    top: 50px;
+    left: 110px;
 }
 
 #bottle {
@@ -82,13 +118,19 @@ body {
   height: 100%;
   left: 140px;
   top: -2px;
-  z-index: 10;
+  z-index: 2;
   opacity: 0;
 }
 
 #cta {
-    top: 206px;
-    left: 180px;
+    top: 156px;
+    left: 35px;
     opacity: 0;
     z-index: 11;
+}
+
+#stars {
+    top: 194px;
+    left: 89px;
+    z-index: 10;
 }

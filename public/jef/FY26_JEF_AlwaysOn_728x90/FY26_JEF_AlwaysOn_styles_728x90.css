@@ -13,7 +13,7 @@ body {
     cursor: pointer;
 }
 
-#bg, #border, #cta, #logo, #headline, #headline2, #headline3, #headline4, #headline5, #headline6, #clickthru, #cta-mouseover {
+#bg, #border, #cta, #logo, #headline, #headline2, #headline3, #headline4, #headline5, #headline6, #headline_a,#headline_bourbon, #clickthru, #cta-mouseover {
     position: absolute;
 }
 
@@ -48,9 +48,20 @@ body {
 }
 
 #logo {
-    top: 24px;
+    top: 27px;
     left: 556px;
     opacity: 0;
+}
+
+
+div#headline_a {
+    top: 28px;
+    left: 123px;
+}
+
+div#headline_bourbon {
+    top: 28px;
+    left: 397px;
 }
 
 #secondGroup {
@@ -58,43 +69,40 @@ body {
 }
 
 #headline {
-    top: 24px;
-    left: 25px;
-    transform: translate(0px, -60px);
+    top: 28px;
+    left: 164px;
 }
 
 #headline2 {
-    top: 24px;
-    left: 268px;
-    transform: translate(0px, -60px);
+    top: 28px;
+    left: 188px;
 }
 
 #headline3 {
-    top: 24px;
-    left: 464px;
-    transform: translate(0px, -60px);
+    top: 28px;
+    left: 163px;
 }
 
 #headline4 {
-    top: 24px;
+    top: 28px;
     left: 14px;
     opacity: 0;
 }
 
 #headline5 {
-    top: 24px;
+    top: 28px;
     left: 208px;
     opacity: 0;
 }
 
 #headline6 {
-    top: 24px;
+    top: 28px;
     left: 320px;
     opacity: 0;
 }
 
 #cta {
-    top: 24px;
+    top: 27px;
     left: 397px;
     width: 144px;
     opacity: 0;

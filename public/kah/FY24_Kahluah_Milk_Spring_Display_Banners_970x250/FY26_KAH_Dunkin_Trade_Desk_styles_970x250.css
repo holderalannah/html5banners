@@ -113,7 +113,7 @@ img { position:absolute; }
 #liqor {
   left: 148px;
   top: 77px;
-  z-index:6;
+  z-index: 16;
 }
 
 #badge {
