@@ -68,6 +68,15 @@ div#headline_bourbon {
     width: 396px;
 }
 
+#headline,
+#headline2,
+#headline3,
+#headline4,
+#headline5,
+#headline6 {
+    opacity: 0;
+}
+
 #headline {
     top: 28px;
     left: 164px;

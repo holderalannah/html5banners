@@ -48,7 +48,7 @@ tl
 	.fromTo("#headline3", { opacity:0 },{ opacity: 1, delay: 0.2, duration: 0.25, stagger: 1, ease: "slow(0.9, 0.1, false)" })
 
 	.to("#firstGroup", {opacity: 0, delay: 0.2, stagger: 0.75, ease: "power1.out"})
-	.fromTo("#bottle", {top: "141px" },{top: "81px",  duration: 0.25, stagger: 1, ease: "slow(0.5, 0.1, false)" })
+	.fromTo("#bottle", {top: "141px" },{top: "100px",  duration: 0.25, stagger: 1, ease: "slow(0.5, 0.1, false)" })
 
 	.fromTo("#headline4", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.05, duration: 0.25, stagger: 1, ease: "power1.out" })
 	.fromTo("#headline5", {x:0, opacity:0 },{x: 0, opacity: 1, delay: 0.05, duration: 0.25, stagger: 1, ease: "power1.out" })

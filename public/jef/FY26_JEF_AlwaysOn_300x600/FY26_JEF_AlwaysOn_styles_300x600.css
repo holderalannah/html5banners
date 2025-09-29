@@ -48,7 +48,7 @@ body {
 }
 
 #logo {
-    top: 485px;
+    top: 491px;
     left: 147px;
     opacity: 0;
     z-index: 11;
@@ -66,8 +66,16 @@ div#headline_bourbon {
 
 #headline,
 #headline2,
-#headline3 {
+#headline3,
+#headline4,
+#headline5,
+#headline6 {
     opacity: 0;
+}
+
+#headline,
+#headline2,
+#headline3 {
     z-index: 9;
 }
 
@@ -93,18 +101,19 @@ div#headline_bourbon {
 }
 
 #headline4 {
-    top: 30px;
-    left: 43px;
+    top: 16px;
+    left: 61px;
 }
 
 #headline5 {
-    top: 65px;
-    left: 45px;
+    top: 42px;
+    left: 64px;
 }
 
 #headline6 {
-    top: 65px;
-    left: 183px;
+    top: 101px;
+    left: 102px;
+    z-index: 5;
 }
 
 #bottle {
@@ -113,18 +122,17 @@ div#headline_bourbon {
   left: -1px;
   top: 141px;
   z-index: 6;
-  opacity: 0;
 }
 
 #cta {
-    top: 486px;
+    top: 492px;
     left: 12px;
     opacity: 0;
     z-index: 11;
 }
 
 #stars {
-    top: 530px;
+    top: 535px;
     left: 80px;
     z-index: 10;
 }

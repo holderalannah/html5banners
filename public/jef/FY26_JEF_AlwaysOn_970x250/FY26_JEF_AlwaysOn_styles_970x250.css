@@ -71,6 +71,12 @@ div#headline_bourbon {
     z-index: 11;
 }
 
+#headline4,
+#headline5,
+#headline6 {
+    opacity: 0;
+}
+
 #headline {
     top: 76px;
     left: 436px;
